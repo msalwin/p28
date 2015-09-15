@@ -1,0 +1,27 @@
+<div id="content_box">
+    
+
+    <div ng-show="showLoading">
+        Trwa ładowanie galerii, proszę czekać ...
+    </div>
+
+    <div  ng-show="!showLoading">
+        <!-- Mozajka zdjęć z prawej strony -->
+        <div class="galerie_dod_img_box" ng-include src="'views/common/random_foto.html'"></div>
+
+        <p class="h1">Galerie</p>
+        <ul id="galery_items">
+            <div ng-repeat="categ in galleryCategList">
+                <li><a ng-href="#/gallery_list/{{categ.id}}">{{categ.nazwa}}</a></li>
+            </div>
+        </ul>
+
+        <p class="h1">Prace dzieci</p>
+        <ul id="galery_items">
+            <div ng-repeat="categ in galleryChildWorkCategList">
+                <li><a ng-href="#/gallery_list/{{categ.id}}">{{categ.nazwa}}</a></li>
+            </div>
+        </ul>
+    </div>  
+  
+</div>

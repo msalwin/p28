@@ -1,0 +1,17 @@
+
+<div id="content_box">
+<p class="h1">Aktualności</p>
+<hr class="hr_kwiaty">
+
+
+<div ng-show="showLoading">
+    Trwa ładowanie listy aktualności, proszę czekać ...
+</div>
+    
+<div ng-repeat="aktualnosc in aktualnosci">
+        <div class="aktualnosci_tytul">{{aktualnosc.tytul}}</div>
+        <any class="aktualnosci_tresc" ng-bind-html="aktualnosc.tresc | nl2br"></any>
+        <div class="aktualnosci_data">Data powstania: {{aktualnosc.wr}}</div>
+        <hr class="hr_kwiaty">
+    </div>
+</div>

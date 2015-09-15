@@ -1,0 +1,7 @@
+<div ng-repeat="randomFoto in randomFotoList">
+    <div class="galerie_dod_img{{randomFoto.index}}">
+        <a ng-href="galerie/{{randomFoto.folder}}/pic/{{randomFoto.pic}}"  data-lightbox="{{randomFoto.folder}}" >
+            <img ng-src="galerie/{{randomFoto.folder}}/tmb/{{randomFoto.tmb}}" />
+        </a>
+    </div>
+</div>

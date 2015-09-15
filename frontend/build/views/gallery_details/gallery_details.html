@@ -1,0 +1,15 @@
+<!-- Treść podstrony -->
+            
+<div id="content_box">
+<div class="h1" ng-bind-html="galleryName"></div>
+    <div ng-show="showLoading">
+        Trwa ładowanie galerii, proszę czekać ...
+    </div>
+    <div ng-show="!showloading">
+    <div ng-repeat="foto in galleryDetails" style="float: left;">
+        <a ng-href="galerie/{{foto.folder}}/pic/{{foto.pic}}" data-lightbox="galeria_details" >
+            <img class="gallery_elem" ng-src="galerie/{{foto.folder}}/tmb/{{foto.tmb}}" />
+        </a>
+    </div>
+    </div>
+</div>

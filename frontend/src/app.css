@@ -1,0 +1,270 @@
+/* ---Główne elementy strony -3 podstawowe bloki strony --------------------------- */
+/* ---Główne elementy strony -3 podstawowe bloki strony --------------------------- */
+
+/* -- sekcja body dokumentu - podstawowe ustawienia -- */
+html, body {
+	background-color: white; 
+	font: normal 14px Helvetica, Arial, sans-serif; 
+	color: #464646; 
+	margin: 0 auto;
+        
+        /* po to, aby strona nie skakała w zalezności od tego, czy scrollbar jest czy go nie ma */
+        min-height: 100.1%; margin-bottom: 1px; 
+}
+
+/* -- ograniczenie przestrzeni zajmowanej przez cała stronę -- */
+#page_box {
+	width: 1000px; 
+	margin: 0 auto; /* Powoduje wycentrowanie */ 
+	background-color: #DDDDDD;
+	position: relative;
+        
+}
+
+/* -- nagłówek strony -- */
+#header_box {
+	text-align: left; 
+	background-color: #93AFFF;
+	height: 113px;
+	padding: 5px 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* -- stopka strony -- */
+#footer_box {
+	clear: both;
+	background-color: #93AFFF;
+	height: 30px;
+	font: normal 10px Helvetica, Arial, sans-serif; 
+	text-align: right;
+}
+
+/* Blok zawierający 2 kolumny pomiedzy nagłówkiem i stopką */
+#block_container{
+			overflow: hidden; /* clearance */
+			margin: 0 auto;
+			background-color: #E8E8FF; /* Tło będzie wypełniało przestrzeń po menu */
+}
+
+
+/* -- Lewy blok - menu -- */
+#menu_box { 
+  float: left;
+  width: 220px;
+  font: normal 16px Helvetica, Arial, sans-serif;
+	background-color: #EEEEEE;
+	background-color: #E8E8FF;
+}
+
+	
+/* -- Srodkowy blok - treść strony -- */
+#content_box { 
+  width: 740px;
+  float: right;
+	padding: 20px 20px 20px 20px;
+	background-color: #E8E8FF;
+}
+
+/* ------ Obrazki dekoracyjne ----------------------------------------------------------- */
+/* -- Obrazek z logo przedszkola -- */
+#top_logo_przedszkola {
+	text-align: left;
+	float: left; 
+	position: relative;
+}
+
+/* -- Dodatkowy obrazek w nagłówku -- */
+#top_dod_img {
+	text-align: left;
+	float: center; 
+	position: relative;
+}
+
+/* -- Obrazek na stronie z listą galerii -- */
+.galerie_dod_img_box {
+	text-align: left;
+	float: right; 
+	position: relative;
+	width: 180px;
+	height: 300px;
+}
+
+.gallery_elem:hover {
+	background-color: #93AFFF;
+}
+
+.galerie_dod_img0 {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	margin:5px 5px;
+	padding: 4px 4px 1px;
+	border:1px solid #93AFFF;
+}
+.galerie_dod_img0:hover {
+	background-color: #93AFFF;
+}
+.galerie_dod_img0 img{
+	border: 0;
+}
+.galerie_dod_img1 {
+	position: absolute;
+	left: 30px;
+	top: 85px;
+	margin:5px 5px;
+	padding: 4px 4px 1px;
+	border:1px solid #93AFFF;
+}
+
+.galerie_dod_img1:hover {
+	background-color: #93AFFF;
+}
+.galerie_dod_img1 img{
+	border: 0;
+}
+.galerie_dod_img2 {
+	position: absolute;
+	left: 10px;
+	top: 170px;
+	margin:5px 5px;
+	padding: 4px 4px 1px;
+	border:1px solid #93AFFF;
+}
+
+.galerie_dod_img2:hover {
+	background-color: #93AFFF;
+}
+.galerie_dod_img2 img{
+	border: 0;
+}
+
+.galerie_dod_img3 {
+	position: absolute;
+	left: 30px;
+	top: 255px;
+	margin:5px 5px;
+	padding: 4px 4px 1px;
+	border:1px solid #93AFFF;
+}
+
+.galerie_dod_img3:hover {
+	background-color: #93AFFF;
+}
+.galerie_dod_img3 img{
+	border: 0;
+}
+
+/* -- common/menu.tpl - Elementy menu --- */
+
+#menu_items, #menu_items li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ #menu_items a:link, #menu_items a:visited {
+	display: block;
+	width: 198px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #BCD7FF;
+	color: #464646;
+	padding: 5px 10px;
+	border-bottom: 1px solid #777;
+}
+
+#menu_items a:hover {
+	background-color: #EFEA08;
+	/*padding: 7px 3px 3px 7px;*/
+}
+
+/* -- galerie.tpl - Elementy listy dostępnych galerii --*/
+#galery_items a { line-height: 25px; }
+#galery_items a:link {text-decoration: none; color: #464646;}
+#galery_items a:active {text-decoration: none; color: #464646;}
+#galery_items a:visited {text-decoration: none; color: #464646;}
+#galery_items a:hover {text-decoration: none; color: #464646; background-color: #EFEA08;}
+#galery_items li {list-style-image: url('img/kwiat20.png');}
+
+/* -- galeria.tpl - Obrazy w galerii -- */
+.gallery_elem {
+	margin:5px 5px;
+	padding:4px;
+	border:1px solid #93AFFF;
+}
+.gallery_elem:hover  {
+	background-color: #93AFFF;
+}
+.gallery_table {
+ width: 100%;
+}
+.gallery_table_elem {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* -- rozklad.tpl, rada.tpl - Rozkład dnia, Rada rodziców -- */
+.rozklad_godziny, .rada_funkcja  {
+ width: 200px;
+ vertical-align: top;
+}
+
+.rozklad_opis, .rada_osoby {
+ width: 500px;
+ vertical-align: top;
+ padding-bottom: 20px;
+}
+
+/* -- grono.tpl - Elementy opisu grona pedagogicznego -- */
+.grono_nag {
+  text-decoration: underline;
+}
+
+.grono_elem {
+ list-style-type: none;
+ padding-left: 0px;
+}
+
+/* -- Powiększenie tekstu na podstronie index.tpl - informacje o przedszkolu */
+.o_nas_tekst {
+	font: normal 16px Helvetica, Arial, sans-serif;
+	float: left;
+	width: 75%;
+}
+#o_nas_img {
+	float: right;
+	width: 25%;
+	/*border: 1px solid red;*/
+
+}
+
+/* -- aktualnosci.tpl - Linia oddzielająca kolejne aktualności */
+.aktualnosci_tytul {font-weight: bold; padding-bottom:15px;}
+.aktualnosci_tresc {padding-bottom:15px;}
+.aktualnosci_data {font-size:10px; text-align: right;}
+
+.hr_kwiaty {
+  /*background-color: black;*/
+  background-image: url('img/kwiaty40.png');
+  height: 30px;
+  border: 0;
+  clear: both;
+  background-repeat:repeat-x;
+  margin: 0px 10px 10px; 
+}
+
+/* -- Klasy wspólne dla wszystkich podstron -- */
+
+/* -- Nagłowek pojawiający się na początku każdej strony -- */ 
+.h1 {
+ font: bold 16px Helvetica, Arial, sans-serif; 
+}
+
+.harmonogram  li{
+ padding-bottom: 10px;
+}
+
+.center {
+text-align: center;
+}

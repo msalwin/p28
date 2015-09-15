@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule api backend/src/www/v1/index.php
