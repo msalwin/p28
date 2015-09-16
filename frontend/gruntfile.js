@@ -101,7 +101,11 @@ module.exports = function(grunt) {
             {expand: true, cwd: 'src', src: ['views/**/*.html'], dest: 'build'},
 
             //pliki html w głównym folderze (index.html)
-            {expand: true, cwd: 'src', src: ['*.html'], dest: 'build'},
+            {expand: true, cwd: 'src', src: ['indexmin.html'], dest: 'build/',
+             rename: function(dest) {
+                        return dest + 'index.html';
+                     }
+            },
 
             // obrazki 
             {expand: true, cwd: 'src', src: ['img/**'], dest: 'build'},

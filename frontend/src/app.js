@@ -26,11 +26,76 @@ p28App.config(['$routeProvider',
                 controller: 'NewsCtrl'
             }).
             
+            when('/staff', {
+                templateUrl: 'views/staff/staff.html',
+                controller: 'StaffCtrl'
+            }).
+
+            when('/council', {
+                templateUrl: 'views/council/council.html',
+                controller: 'CouncilCtrl'
+            }).
+                    
             when('/about', {
                 templateUrl: 'views/about/about.html',
                 controller: 'AboutCtrl'
             }).
 
+            when('/mission', {
+                templateUrl: 'views/mission/mission.html',
+                controller: 'MissionCtrl'
+            }).
+                    
+            when('/vision', {
+                templateUrl: 'views/vision/vision.html',
+                controller: 'VisionCtrl'
+            }).
+                
+            when('/statute', {
+                templateUrl: 'views/statute/statute.html',
+                controller: 'StatuteCtrl'
+            }).
+
+            when('/payments', {
+                templateUrl: 'views/payments/payments.html',
+                controller: 'PaymentsCtrl'
+            }).                
+
+            when('/orders', {
+                templateUrl: 'views/orders/orders.html',
+                controller: 'OrdersCtrl'
+            }).                
+
+            when('/order1', {
+                templateUrl: 'views/order1/order1.html',
+                controller: 'Order1Ctrl'
+            }). 
+
+            when('/order2', {
+                templateUrl: 'views/order2/order2.html',
+                controller: 'Order2Ctrl'
+            }). 
+                    
+            when('/events_schedule', {
+                templateUrl: 'views/events_schedule/events_schedule.html',
+                controller: 'EventsScheduleCtrl'
+            }).                
+
+            when('/contact', {
+                templateUrl: 'views/contact/contact.html',
+                controller: 'ContactCtrl'
+            }).                
+
+            when('/recruitment', {
+                templateUrl: 'views/recruitment/recruitment.html',
+                controller: 'RecruitmentCtrl'
+            }).                
+                
+            when('/timetable', {
+                templateUrl: 'views/timetable/timetable.html',
+                controller: 'TimetableCtrl'
+            }).  
+                
             when('/gallery_categ', {
                 templateUrl: 'views/gallery_categ/gallery_categ.html',
                 controller: 'GalleryCategCtrl'
